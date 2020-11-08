@@ -23,18 +23,18 @@ cursor: url('cursor.png'), auto
         }
 
 		a.content {
-			color: #cea668;
+			color: #ad8c58;
 			text-decoration: none;
 		}
 
 		a.content:visited {
 				text-decoration: none;
-				color: #cea668;
+				color: #ad8c58;
 			}
 
 		a.content:hover {
 				text-decoration: underline;
-				color: #cea668;
+				color: #ad8c58;
 			}
 
         div.card:hover {
@@ -57,6 +57,7 @@ cursor: url('cursor.png'), auto
             padding: 15px;
             display: flex;
             flex-flow: row wrap;
+		justify-content: space-evenly;
         }
         .card {
             position: relative;
@@ -86,11 +87,43 @@ cursor: url('cursor.png'), auto
         .card:hover {
             transform: scale(1.1);
         }
+.rightpic {
+    float: right;
+    margin-right: 40px;
+}
 .left{
 padding-left: 30px;
 display: inline-block;
 	margin-bottom: 30px;
 }
+.lefttext{
+padding-left: 30px;
+color: #ad8c58;
+}
 a {
 cursor: url('pointer.png'), pointer
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ad8c58;
+    border-radius: 10px;
+}
+h2::selection {
+    color: #121212; /* Цвет текста */
+    background: #ffdeab; /* Цвет фона */
+}
+h1::selection {
+    color: #121212; /* Цвет текста */
+    background: #ffdeab;
 }
